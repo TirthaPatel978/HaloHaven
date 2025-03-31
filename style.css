@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 20%, 98%);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.597);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+   
+}
+.logo1 {
+width: 250px;  /* Adjust width */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%; /* Make it responsive */
+    max-height: 180px;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.2)); /* Optional shadow */
+}
+
+.logo {
+    float: left;
+    font-size: 20px;
+    margin-top: 0%;
+    margin-left: 0%;
+    font-weight: bold;
+    color: #006ab6;
+    text-shadow: 2px 2px 5px rgba(85, 85, 86, 0.593);
+}
+
+nav {
+    float: right;
+    
+    overflow: hidden;
+    padding: 10px 5px;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 0px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    padding: 14px 20px;
+    display: inline-block;
+
+}
+
+nav ul li a:hover {
+    color: #f6f8f9;
+    background-color: rgb(19, 6, 164);
+    border-radius: 5px;
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    text-align: left ;
+    margin-left:0px;
+    background: url('Background-home1.jpg') no-repeat center center/cover;
+}
+
+h1{
+    font-size: 4vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(65, 152, 144);
+    text-align: left;
+    margin-left: 0px;
+}
+p{
+    font-size: 1em;
+}
+.quote {
+    font-size: 2vw;
+    font-style: italic;
+    color: #5ca0d0;
+}
+
+/* Overview Section */
+.overview-section {
+    padding: 100px 0;
+    text-align: center;
+    font-size: 1.1em;
+    
+}
+
+.overview-section h1 {
+    font-size: 2.5em;
+    color: #1ba290;
+    text-align: center;
+}
+
+.overview-section q  {
+    color:#6f77eb;
+    font-size: 1.3em;
+}
+
+/* Help Section */
+.help-section {
+    padding: 80px 0;
+    background-color: #000000;
+    text-align: center;
+}
+
+.help-section h2 {
+    font-size: 2.5em;
+    color: #1ba290;
+    margin-bottom: 30px;
+}
+
+.help-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.help-card {
+    background: #000000;
+    padding: 20px;
+    margin:2%;
+    
+    border-radius: 8px;
+    box-shadow: 0px 8px 10px rgba(28, 28, 80, 0.744), 0 -8px 10px  rgba(28, 28, 80, 0.744), 8px 0 10px  rgba(28, 28, 80, 0.744), -8px 0 10px rgba(28, 28, 80, 0.744);
+    width: 300px;
+    text-align: center;
+}
+
+.help-card h3 {
+    font-size: 1.5em;
+    color: #0c654a;
+    margin-bottom: 10px;
+}
+
+.help-card p {
+    font-size: 1em;
+    color: #afd6d0;
+}
+
+/* Trust Section */
+.trust-section {
+    padding: 80px 0;
+    background-color: #000000;
+    text-align: left;
+}
+
+.trust-section h2 {
+    font-size: 2.5em;
+    color:  #1ba290;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.trust-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+}
+
+.trust-card {
+    background: #000000;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(231, 238, 255, 0.386);
+    width: 260px;
+    text-align: center;
+}
+
+.trust-card img {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.trust-card h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.trust-points  ul {
+    list-style-type: circle; 
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.trust-points ul li {
+    font-size: 1.1em;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 8px;
+}
