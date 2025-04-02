@@ -1,0 +1,45 @@
+.categories form {
+    margin-top: 100px;
+}
+.categories form {
+    margin: 20px 0; /* Remove extra space between forms */
+    padding: 0; /* Ensure no padding is adding extra space */
+    display: flex; /* Align button properly */
+    justify-content: center; /* Center button */
+    align-items: flex-start;
+    text-align: center;
+}
+body {
+    padding-top: 100px; 
+}
+.categories h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    color: #178c6f;
+    margin-bottom: 12px;
+    text-align: center;
+    padding-top: 20px; 
+}
+.categories button {
+    width: 50%;
+    height: 40%;
+    padding: 20px;
+    margin: 1px 0;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(255, 254, 254);
+    background: #1f1f1f;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.248);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.categories button:hover {
+    background: #417f70;
+    color: rgb(255, 254, 254);
+    transform: scale(1.05);
+}
