@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HaloHaven</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style1.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .category-nav {
+            background-color: #000000;
+            padding: 10px 0;
+            text-align: center;
+            border-top: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+            margin-top: 120px;
+            z-index: 1;
+            position: relative;
+            width: 100%;
+        }
+
+        .category-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .category-nav li a {
+            color: #38ba82;
+            border: 2px solid rgb(3, 36, 31);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight:bold;
+            font-size: 1em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .category-nav li a:hover {
+            color: #ffffff;
+            background-color: rgb(26, 42, 121);
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.185);
+        }
+
+        .section {
+            padding: 60px 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h2 {
+            font-size: 2.1em;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            color: #613d93;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+
+        .medi-con {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .hospital-box {
+            background-color: #1a1a1a;
+            border-left: 5px solid #7a7785;
+            border-radius: 10px;
+            padding: 25px;
+            width: 330px;
+            box-shadow: 0 4px 20px rgba(98, 0, 255, 0.141);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+        }
+
+        .hospital-box:hover {
+            transform: scale(1.03);
+        }
+
+        .hospital-box h2 {
+            color: #3b4cdf;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .hospital-box p {
+            color: #d0d0d0;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .donate-btn {
+            align-self: flex-start;
+            background: linear-gradient(135deg, #be00fe, #631bff);
+            color: #0e0e0e;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1em;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .donate-btn:hover {
+            background: linear-gradient(135deg, #631bff, #be00fe);
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo"><img src="../logo.jpg" alt="HaloHaven" class="logo1"></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../categories.html">Categories</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <ul>
+          <li><a href="orphanages.html">Orphanages</a></li>
+          <li><a href="oldage-homes.html">Old Age Homes</a></li>
+          <li><a href="medical.html">Medical Centers</a></li>
+          <li><a href="animal-shelters.html">Animal Shelters</a></li>
+          <li><a href="relief.html">Disaster Relief</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h2>Healing Through Compassion</h2>
+        <p>
+            Our mission is to support medical centers that provide life-saving treatments to underserved communities.
+            Whether it's through funding vital equipment, helping cover surgery costs, or assisting health workers in rural
+            areas—every contribution you make brings hope and healing to someone in need.
+        </p>
+        <p>
+            HaloHaven partners with verified healthcare facilities across regions to ensure donations reach the right hands,
+            and volunteer programs help with medical camps, health education, and patient care.
+        </p>
+    </section>
+
+    <div class="medi-con">
+        <!-- Hospital Card 1 -->
+        <div class="hospital-box">
+            <h2>Health & Care Foundation</h2>
+            <p>NGO-run healthcare center offering subsidized and free cancer care for vulnerable groups. Their work focuses on early diagnosis and compassionate treatment.</p>
+            <a href="donate-form.html" class="donate-btn">Donate Now</a>
+        </div>
+    
+        <!-- Hospital Card 2 -->
+        <div class="hospital-box">
+          <h2>Gujarat Cancer & Research Institute</h2>
+          <p>State Cancer Institute in Ahmedabad providing affordable, comprehensive cancer treatment, research, and patient housing for long-term therapies.</p>
+          <a href="donate-form.html" class="donate-btn">Donate Now</a>
+        </div>
+    
+        <!-- Hospital Card 3 -->
+        <div class="hospital-box">
+            <h2>Shree Krishna Hospital</h2>
+            <p>A 1000-bed multi-specialty hospital in Karamsad offering full oncology care, bone marrow transplants, and community support for underprivileged cancer patients.</p>
+            <a href="donate-form.html" class="donate-btn">Donate Now</a>
+        </div>
+    
+        <!-- Hospital Card 4 -->
+        <div class="hospital-box">
+          <h2>Aatmaja Cancer Support</h2>
+          <p>This NGO supports terminally ill cancer patients with home-based palliative care, ensuring love, dignity, and relief in their final days.</p>
+          <a href="donate-form.html" class="donate-btn">Donate Now</a>
+        </div>
+    
+        <!-- Hospital Card 5 -->
+        <div class="hospital-box">
+          <h2>Ahmedabad Cancer Foundation</h2>
+          <p>Focused on cancer awareness and financial support for treatments. ACF bridges the gap for patients who can't afford advanced medical procedures.</p>
+          <a href="donate-form.html" class="donate-btn">Donate Now</a>
+        </div>
+    
+        <!-- Hospital Card 6 -->
+        <div class="hospital-box">
+          <h2>Shrimad Rajchandra Hospital</h2>
+          <p>Serving rural Gujarat with low-cost surgical care and cancer treatments. Combines modern medical practice with deep community connection.</p>
+          <a href="donate-form.html" class="donate-btn">Donate Now</a>
+        </div>
+      </div>
+
+    
+
+</body>
+</html>
