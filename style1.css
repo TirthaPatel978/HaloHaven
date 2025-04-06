@@ -29,8 +29,8 @@ body {
     font-size: 1.7em;
     font-weight: bold;
     color: rgb(255, 254, 254);
-    background: #1f1f1f;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.248);
+    background: linear-gradient(135deg, #1926b8, #9707c3);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -39,7 +39,7 @@ body {
 }
 
 .categories button:hover {
-    background: #417f70;
+    background: linear-gradient(135deg, #7810b9, #321a9a);
     color: rgb(255, 254, 254);
     transform: scale(1.05);
 }
