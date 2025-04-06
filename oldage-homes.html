@@ -4,26 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Old Age Homes - HaloHaven</title>
-  <link rel="stylesheet" href="style2.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color:  #222;
+    }
+
+    header {
+      background-color: #000000;
+      color: #f4f4f4;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+    }
+
+    .intro {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #3b4cdf;
+    }
+
+    .card p {
+      margin: 10px 0;
+      line-height: 1.4;
+      color: #3b4cdf;
+    }
+
+    .card a {
+      color: #3b4cdf;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Old Age Homes Near Nadiad & Vadodara</h1>
+    <h1>Old Age Homes near Nadiad</h1>
+    <p class="intro">
+      At HaloHaven, we aim to support the elderly by connecting compassionate individuals with old age homes that provide care, dignity, and community. Below are some trusted homes near Nadiad where your help can make a lasting impact.
+    </p>
   </header>
-  <main class="org-list">
-    <div class="org-card">
-      <img src="images/shantivan.jpg" alt="Shantivan Old Age Home" />
-      <h2>Shantivan Old Age Home</h2>
-      <p><strong>Founder:</strong> Kiran Shah</p>
-      <p><strong>Address:</strong> V. V. Nagar Road, Nadiad, Gujarat</p>
+
+  <main class="card-container">
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.Yx6oPhWGMdaFtI0GrIW3owHaCk&pid=Api" alt="Jivan Sandhya Old Age Home">
+      <h2>Jivan Sandhya Old Age Home</h2>
+      <p><strong>Address:</strong> Near Civil Hospital, Nadiad, Gujarat 387001</p>
+      <p><strong>Founder:</strong> Mr. Prakash Shah</p>
+      <p><strong>Website:</strong> <a href="http://jivansandhya.org" target="_blank">jivansandhya.org</a></p>
     </div>
 
-    <div class="org-card">
-      <img src="images/jivan-jyot.jpg" alt="Jivan Jyot Ashram" />
-      <h2>Jivan Jyot Ashram</h2>
-      <p><strong>Founder:</strong> Seema Desai</p>
-      <p><strong>Address:</strong> Gotri, Vadodara, Gujarat</p>
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.h3KYYt-wAabBuf0tQ8CaJAHaEK&pid=Api" alt="Shraddha Old Age Home">
+      <h2>Shraddha Old Age Home</h2>
+      <p><strong>Address:</strong> College Road, Anand-Nadiad Highway, Nadiad, Gujarat 387002</p>
+      <p><strong>Founder:</strong> Mrs. Urmila Desai</p>
+      <p><strong>Website:</strong> <a href="http://shraddhaoldage.org" target="_blank">shraddhaoldage.org</a></p>
+    </div>
+
+    <div class="card">
+      <img src="https://eldercasa.com/wp-content/uploads/2023/03/Kamdhenu-Retreat-Image-1.jpg" alt="Savita Elderly Care Center">
+      <h2>Savita Elderly Care Center</h2>
+      <p><strong>Address:</strong> Mahadev Nagar, Nadiad, Gujarat 387001</p>
+      <p><strong>Founder:</strong> Dr. Kiran Patel</p>
+      <p><strong>Website:</strong> <a href="http://savitaeldercare.org" target="_blank">savitaeldercare.org</a></p>
+    </div>
+
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.h7yRZ7Cx67li9YybQaTnIgHaE8&pid=Api" alt="Mangal Dham Senior Home">
+      <h2>Mangal Dham Senior Home</h2>
+      <p><strong>Address:</strong> Opp. Jain Derasar, Nadiad Rural, Gujarat 387001</p>
+      <p><strong>Founder:</strong> Mr. Harshad Bhatt</p>
+      <p><strong>Website:</strong> <a href="http://mangaldham.org" target="_blank">mangaldham.org</a></p>
     </div>
   </main>
+
+  <footer>
+    <p>© 2025 HaloHaven. All rights reserved.</p>
+  </footer>
 </body>
 </html>
