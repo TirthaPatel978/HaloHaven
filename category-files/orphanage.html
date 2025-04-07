@@ -71,7 +71,7 @@
             color: #ffffff;
         }
 
-        .medi-con {
+        .orphan-con {
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
@@ -81,7 +81,7 @@
             justify-content: center;
         }
 
-        .hospital-box {
+        .orphanage-box {
             background-color: #1a1a1a;
             border-left: 5px solid #7a7785;
             border-radius: 10px;
@@ -94,39 +94,41 @@
             transition: transform 0.3s ease;
         }
 
-        .hospital-box:hover {
+        .orphanage-box:hover {
             transform: scale(1.03);
         }
         
-        .hospital-box img {
+        .orphanage-box img {
             float:left;
             border-radius: 6px;
             background-color: #222;
             padding: 5px;
         }
 
-        .hospital-box h2 {
+        .orphanage-box h2 {
             color: #3b4cdf;
             font-size: 1.4em;
             margin-bottom: 10px;
         }
 
-        .hospital-box p {
+        .orphanage-box p {
             color: #d0d0d0;
             font-size: 0.95em;
             line-height: 1.6;
             margin-bottom: 20px;
         }
-        .hospital-box .facts {
+        .orphanage-box .facts {
             column-count: 2;
             column-gap: 40px;
             column-rule-style: solid;
         }
-        .hospital-box .facts h4 {
+        .orphanage-box .facts h4 {
             text-align: center;
             color: #4656e9;
             column-span: all;
         }
+
+
         .facts ul {
             list-style: disc inside;
             padding: 0;
@@ -137,6 +139,32 @@
         .facts li {
               margin-bottom: 7px;
         }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            width: 220px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 270px;
+            display: block;
+        }       
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
         .donate-btn {
             display: flex;
             gap: 50px;
@@ -181,7 +209,7 @@
 
     <nav class="category-nav">
         <ul>
-          <li><a href="orphanage.html">Orphanages</a></li>
+          <li><a href="orphanages.html">Orphanages</a></li>
           <li><a href="oldage-homes.html">Old Age Homes</a></li>
           <li><a href="medical.html">Medical Centers</a></li>
           <li><a href="animal-shelters.html">Animal Shelters</a></li>
@@ -202,56 +230,83 @@
         </p>
     </section>
 
-    <div class="medi-con">
-        <!-- Hospital Card 1 -->
-        <div class="hospital-box">
-            <h2>Health & Care Foundation</h2>
+    <div class="orphan-con">
+        <!-- Orphanage Card 1 -->
+        <div class="orphanage-box">
+            <h2>Shaksham Foundation</h2>
             <p>
-                <img src="hospital-1.jpg" alt="Health & Care foundation" style="height: 200px; width: 200px;">
-                NGO-run healthcare center offering subsidized and free cancer care for vulnerable groups. Their work focuses on early diagnosis and compassionate treatment.<br><br>
-                HEALTH & CARE FOUNDATION, (formerly known as Polio Foundation) was founded in 1987 by a handful of dedicated Doctors and like-minded persons to rehabilitate polio afflicted persons through surgeries.<br><br>
-                Our goal is that irrespective of their economic condition, no patient should ever have to leave our premises without proper treatment. We are indebted to our Doctors and esteemed Donors for their continuous support in making this goal come true. 
+                A leading NGO in Ahmedabad supporting orphans, elders, women, and underprivileged communities with food, education, medical support, and shelter.<br><br>
+                We aim to achieve bigger goals by educating the underprivileged children and youth of our society to create a strong foundation for their future.<br> With proper education support and soft skill training- we can push these children to enter the mainstream of life and stand tall as dignified individuals in the upcoming time.<br><br>
+                We are thankful to the donors for the funds and our workers who successfully conduct the programs. With their aid, they help us feed more children at the orphanage in Ahmedabad and many other children belonging to the underprivileged communities dwelling in slums.<br><br>
+                Shaksham Foundation stands to serve humans with a humane approach.
             </p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                  <img src="orphanage-1.1.png" alt="Orphanage 1">
+                </div>
+                <div class="gallery-item">
+                  <img src="orphanage-1.2.png" alt="Orphanage 2">
+                </div>
+                <div class="gallery-item">
+                  <img src="orphanage-1.3.png" alt="Orphanage 3">
+                </div>
+              </div>
             <div class="facts">
-                <h4>Out-Reach Medical Camps</h4>
+                <h4>Basic Information</h4>
                 <ul>
-                    <li>Diabetes -210 camps</li>
-                    <li>Breast Cancer -247 camps</li>
-                    <li>Congenital Birth Defects -8 camps</li>
-                    <li>Cervical Cancer -152 camps</li>
-                    <li>Skin Cancer -120 camps</li>
-                    <li>Polio -320 camps</li>
+                    <li>Address: 5th Floor, Kashmira Chambers, Old High Court Road, Navrangpura, Ahmedabad 380009.</li>
+                    <li>Phone: +91 9173 82 7722​</li>
+                    <li>Email: info@shakshamfoundation.org</li>
+                    <li>Education Centre Address: Ram Rahim Nagar , I . P mission Kabrastan, in Riverfront , Behrampura Ahmedabad.</li>
                 </ul>
             </div>
             <div class="donate-btn">
-                <a href="https://www.healthandcarefoundation.com" >Visit the official site</a>
-                <a href="donate-m-form.html" >Donate Now</a>
+                <a href="https://www.shakshamfoundation.org" >Visit the official site</a>
+                <a href="donate-op-form.html" >Donate Now</a>
             </div>
         </div>
     
         <!-- Hospital Card 2 -->
-        <div class="hospital-box">
-          <h2>Gujarat Cancer & Research Institute</h2>
-          <p>
-            <img src="hospital-2.png" alt="Gujarat Cancer & Research Institute" style="height: 200px; width: 400px;">
-            State Cancer Institute in Ahmedabad providing affordable, comprehensive cancer treatment, research, and patient housing for long-term therapies.<br><br>
-            What began as a thoughtful, socially responsible gesture in 1961 has today touched millions of lives, offering comprehensive cancer treatment and care.<br><br>
-            While journey till date is certainly a milestone, it's the future and our mission to reduce the burden of the disease in the coming years which is more compelling.<br><br>
-            GCRI is a State Cancer Institute located in Ahmedabad (Gujarat state) and one of the largest cancer care centers of the country with modern cancer facilities for diagnosis and treatment.<br><br>
-          </p>
-          <div class="facts">
-            <h4>The Sole Mission</h4>
-            <ul>
-                <li>Conduct OPD and indoor activities for diagnosis, staging, treatment and monitoring disease progress.</li>
-                <li>Render free or subsidized treatment to needy patients without any distinction of caste, creed or religion.</li>
-                <li>Organize public education programmes, the diagnostic and blood donation camps, conferences and other scientific meets.</li>
-                <li>Display a permanent Cancer Awareness and Anti-tobacco exhibition and arranges other preventive efforts.</li>
-            </ul>
-          </div>
-          <div class="donate-btn">
-                <a href="https://www.gcriindia.org/index.php" >Visit the official site</a>
-                <a href="donate-m-form.html" >Donate Now</a>
-          </div>
+        <div class="orphanage-box">
+            <h2>Visamo Kids Foundation</h2>
+            <p>
+                A shelter home providing free education for underprivileged kids from across Gujarat, aiming to uplift their lives through quality education.<br><br>
+                Visamo Kids Foundation has created a facility that can house 100+ kids with the mission to transform the lives of less privileged yet high potential kids through formal K-12 education in English (from classes I to XII) in partnership with the finest schools under CBSE, ICSE and State board.<br><br>
+                Here, you can 
+                <ul>
+                    <li>Give Donation</li>
+                    <li>Become a volunteer</li>
+                    <li>Sponser a child</li>
+                </ul>
+                50+ kids have successfully completed formal education and their journey of 12 years of institutional stay at the home, and are now pursuing higher studies.<br>
+                82 are currently enrolled at VKF; 10 students are shortlisted for admission each year.
+                Visamo Kids Foundation has been accredited with the “Gold seal” of Trust Certificate of Give, after undergoing an extensive due diligence process at Give Foundation. 
+            </p>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                  <img src="orphanage-1.1.png" alt="Orphanage 1">
+                </div>
+                <div class="gallery-item">
+                  <img src="orphanage-1.2.png" alt="Orphanage 2">
+                </div>
+                <div class="gallery-item">
+                  <img src="orphanage-1.3.png" alt="Orphanage 3">
+                </div>
+              </div>
+            <div class="facts">
+                <h4>Basic Information</h4>
+                <ul>
+                    <li>Address: 5th Floor, Kashmira Chambers, Old High Court Road, Navrangpura, Ahmedabad 380009.</li>
+                    <li>Phone: +91 9173 82 7722​</li>
+                    <li>Email: info@shakshamfoundation.org</li>
+                    <li>Education Centre Address: Ram Rahim Nagar , I . P mission Kabrastan, in Riverfront , Behrampura Ahmedabad.</li>
+                </ul>
+            </div>
+            <div class="donate-btn">
+                <a href="https://visamokids.org/" >Visit the official site</a>
+                <a href="donate-op-form.html" >Donate Now</a>
+            </div>
         </div>
     
         <!-- Hospital Card 3 -->
