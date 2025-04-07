@@ -1,45 +1,51 @@
-.categories form {
-    margin-top: 100px;
-}
-.categories form {
-    margin: 20px 0; /* Remove extra space between forms */
-    padding: 0; /* Ensure no padding is adding extra space */
-    display: flex; /* Align button properly */
-    justify-content: center; /* Center button */
-    align-items: flex-start;
-    text-align: center;
-}
-body {
-    padding-top: 100px; 
-}
-.categories h1 {
+.categories {
+    background: url("category-background.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    position: relative;
+    padding: 20px;
+  }
+  .categories .form-container {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(219, 219, 217);
+    max-width: 500px;
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.342);
+    border-radius: 12px;
+  }
+
+.form-container h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5em;
-    color: #178c6f;
+    color: #1b9276;
     margin-bottom: 12px;
     text-align: center;
-    padding-top: 20px; 
+    padding-top: 10px; 
 }
-.categories button {
-    width: 50%;
-    height: 40%;
-    padding: 20px;
-    margin: 1px 0;
-    text-align: center;
-    font-size: 1.7em;
+
+.form-container button {
+    width: 100%;
+    padding: 15px;
+    height: 30%;
+    margin-bottom: 10px;
+    font-size: 1.2em;
     font-weight: bold;
-    color: rgb(255, 254, 254);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(135deg, #d2d3d9, #c5bdbd);
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.248);
-    background: linear-gradient(135deg, #121c8d, #6b058a);
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+  }
 
 .categories button:hover {
-    background: linear-gradient(135deg, #5d0d8f, #28157d);
-    color: rgb(255, 254, 254);
+    background: linear-gradient(135deg, #e7e5e5, #777679);
+    color: rgb(0, 0, 0);
     transform: scale(1.05);
 }
