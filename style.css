@@ -16,7 +16,7 @@ body {
 /* Header Styles */
 header {
     background-color: rgba(0, 0, 0, 0.899);
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -235,10 +235,6 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(231, 238, 255, 0.386);
     width: 260px;
     text-align: center;
-}
-
-.trust-card:hover {
-    transform: scale(1.05);
 }
 
 .trust-card img {

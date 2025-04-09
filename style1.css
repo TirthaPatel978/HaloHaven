@@ -1,15 +1,26 @@
 .categories {
+    margin-top: 125px;
     background: url("category-background.jpg") no-repeat center center/cover;
-    min-height: 100vh;
+    min-height: 76vh;
     position: relative;
     padding: 20px;
   }
+  .categories::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* adjust the 0.5 for more or less darkness */
+    z-index: 0;
+}
   .categories .form-container {
     position: absolute;
-    right: 8%;
-    top: 50%;
+    left:33%;
+    top: 40%;
     transform: translateY(-50%);
-    background-color: rgb(219, 219, 217);
+    background-color: rgba(248, 238, 148, 0.532);
     max-width: 500px;
     padding: 30px;
     margin: 30px;
@@ -20,7 +31,7 @@
 .form-container h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5em;
-    color: #1b9276;
+    color: #008767;
     margin-bottom: 12px;
     text-align: center;
     padding-top: 10px; 
@@ -35,8 +46,8 @@
     font-weight: bold;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(135deg, #d2d3d9, #c5bdbd);
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.248);
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.596);
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 8px;
@@ -45,7 +56,7 @@
   }
 
 .categories button:hover {
-    background: linear-gradient(135deg, #e7e5e5, #777679);
+    background: linear-gradient(135deg, #e7e5e5, #a9a9a9);
     color: rgb(0, 0, 0);
     transform: scale(1.05);
 }
