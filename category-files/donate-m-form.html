@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaloHaven</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .donate-hero {
+            margin-top: 125px;
+            background: url("donate-pic3.jpg") no-repeat center center/cover;
+            height: 70vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay-text {
+            background-color: rgba(0, 0, 0, 0.54);
+            padding: 30px 50px;
+            border-radius: 10px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .overlay-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .overlay-text p {
+            font-size: 1.2em;
+            color: #e5e5e5;
+        }
+
+        .spacer {
+            height: 40px;
+        }
+
+        .donation-form {
+            max-width: 900px;
+            margin: 0 auto;
+            margin-bottom: 100px;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(190, 0, 254, 0.1);
+            color: #ffffff;
+        }
+
+        .donation-form h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            color: #be00fe;
+        }
+
+        .donation-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .donation-form label {
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            color: #dddddd;
+        }
+
+        .donation-form input, .donation-form select {
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            background-color: #292929;
+            color: #ffffff;
+        }
+
+        .donation-form button {
+            background: linear-gradient(135deg, #be00fe, #631bff);
+            color: #ffffff;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .donation-form button:hover {
+            background: linear-gradient(135deg, #631bff, #be00fe);
+            transform: scale(1.05);
+        }
+
+        .donation-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: 'Poppins', sans-serif;
+            background-color: #292929;
+            color: #ffffff;
+            resize: vertical;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95em;
+            font-family: 'Poppins', sans-serif;
+            color: #cccccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><img src="../logo.jpg" alt="HaloHaven" class="logo1"></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../categories.html">Categories</a></li>
+                    <li><a href="../volunteer.html">Volunteer</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="donate-hero">
+        <div class="overlay-text">
+          <h1>Support Healing, Spread Hope</h1>
+          <p>Your donation helps patients fight with dignity and strength.</p>
+        </div>
+      </section>
+      
+      <!-- Breathing space -->
+      <div class="spacer"></div>
+      
+      <!-- Donation Form Section -->
+      <section class="donation-form">
+        <h2>Donate Now</h2>
+        <form action="submit-donation.html" method="POST">
+          
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+      
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="address" required>
+      
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required>
+      
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" value="Gujarat" required>
+      
+          <label for="zip">Postal Code</label>
+          <input type="text" id="zip" name="zip" required>
+      
+          <label for="medical">Select a center</label>
+          <select id="medical" name="medical" required>
+            <option value="">~Choose a Medical Center~</option>
+            <option value="med1">Health & Care Foundation</option>
+            <option value="med2">Gujarat Cancer & Research Institute</option>
+            <option value="med3">Sanjivani Health & Relief Committee</option>
+            <option value="med4">Aatmaja Cancer Support</option>
+            <option value="med4">Shri Navchetan Andhjan Mandal</option>
+            <option value="med4">Shrimad Rajchandra Hospital</option>
+          </select>
+          <label for="payment-mode">Mode of Payment</label>
+          <select id="payment-mode" name="payment-mode" required>
+            <option value="">~Select Payment Method~</option>
+            <option value="upi">UPI (Google Pay, PhonePe, etc.)</option>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="netbanking">Net Banking</option>
+            <option value="cash">Cash/Cheque (Offline)</option>
+          </select>
+          <label for="amount">Donation Amount (INR)</label>
+          <input type="number" id="amount" name="amount" required>
+      
+          <label for="reason">Why are you donating?</label>
+          <textarea id="reason" name="reason" rows="4" placeholder="Share your thoughts..."></textarea>
+      
+          <label class="checkbox-label">
+            <input type="checkbox" name="updates" id="updates">
+            I would like to receive updates on how my donation is used.
+          </label>
+      
+          <button type="submit">Donate</button>
+        </form>
+      </section>
+</body>
+</html>
+    
