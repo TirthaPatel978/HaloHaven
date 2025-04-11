@@ -5,49 +5,56 @@
     max-width: 1200px;
     margin: auto;
   }
-  .youtube-bg {
+  
+  .video-wrapper {
     position: relative;
-    height: 100vh;
+    height: 60vh;
+    width: 100%;
     overflow: hidden;
   }
   
-  .video-wrapper {
+  .cropped-iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 120vw;
+    height: 120vh;
+    transform: translate(-50%, -50%);
     pointer-events: none;
+    z-index: -1;
   }
-  
-  .video-wrapper iframe {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
-  
+
   .overlay-content {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
     text-align: center;
-    padding: 0 20px;
+    padding: 20px;
+    z-index: 2;
     background: rgba(0, 0, 0, 0.4); /* Optional dim overlay */
   }
   
-  .volunteer-programs h1 {
+  .overlay-content h1 {
     font-size: 3em;
-    color: #3d8488;
-    text-align: center;
-    margin-bottom: 40px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 6px rgba(132, 139, 247, 0.748);
   }
-  
+
+  .overlay-content .quote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 10px;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  .volunteer-programs p {
+    color: #a3c1c3;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+  }  
   .volunteer-category {
     margin-bottom: 60px;
   }
@@ -103,3 +110,17 @@
     background-color: #4f8e8c;
   }
   
+  .message h1 {
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 6px rgba(82, 82, 82, 0.532);
+    height: 40vh;
+  }
+
+  .message {
+    filter: brightness(60%);
+    position: relative;
+    background: url("volunteer1.webp") no-repeat center center/cover;
+  }
