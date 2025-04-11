@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Disaster Relief NGOs - HaloHaven</title>
-</head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #222;">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
 
+    nav {
+      background-color: #004080;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      padding: 1em 0 0.5em;
+    }
+
+    .ngo-container {
+      background-color:#222;
+      width: 90%;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .ngo {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #be00fe, #631bff;;
+      padding-bottom: 50px;
+    }
+
+    .ngo img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .ngo-details {
+      flex: 1;
+    }
+
+    .ngo-details h2 {
+      color: #004080;
+      margin-top: 0;
+    }
+
+    .info {
+      margin-top: 10px;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      text-decoration: none;
+       background: linear-gradient(135deg, #be00fe, #631bff);
+      color: white;
+      border-radius: 5px;
+    }
+
+    .buttons a:hover {
+      background-color:#4656e9;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="orphanage.html">Orphanages</a>
+    <a href="oldage-homes.html">Old Age Homes</a>
+    <a href="medical.html">Medical</a>
+    <a href="animal.html">Animal Shelters</a>
+    <a href="relief.html">Disaster Relief</a>
+  </nav>
+
+  
   <header style="background-color: #000; color: #f4f4f4; padding: 30px 20px; text-align: center;">
     <h1 style="margin: 0 0 10px;">Disaster Relief NGOs near Nadiad</h1>
     <p style="font-size: 1.1em; max-width: 800px; margin: 0 auto;">
@@ -14,45 +107,68 @@
     </p>
   </header>
 
-  <main style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px 20px;">
+  <div class="ngo-container">
 
-    <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 300px; padding: 20px;">
-      <img src="https://www.giveindia.org/blog/wp-content/uploads/2022/03/GOONJ.jpg" alt="Goonj NGO" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-      <h2 style="color: #3b4cdf;">Goonj</h2>
-      <p><strong>Address:</strong> Partner Center, Nadiad, Gujarat</p>
-      <p><strong>Founder:</strong> Anshu Gupta</p>
-      <p><strong>Website:</strong> <a href="https://goonj.org" target="_blank" style="color: #3b4cdf;">goonj.org</a></p>
+    <div class="ngo">
+      <img src="https://www.giveindia.org/blog/wp-content/uploads/2023/03/Disaster-Relief.jpg" alt="Gujarat Relief Foundation">
+      <div class="ngo-details">
+        <h2>Gujarat Relief Foundation</h2>
+        <p>The Gujarat Relief Foundation has been providing disaster response and humanitarian aid since 2001. From earthquake recovery to cyclone relief and pandemic aid, the NGO is known for its rapid response and collaboration with local authorities to serve affected communities.</p>
+        <p>They conduct awareness drives, provide temporary shelters, and supply clean water, food, and medicine to those impacted by natural disasters. Their volunteer network is active in districts around Nadiad and beyond.</p>
+
+        <div class="info">
+          <strong>Founder:</strong> Mr. Dinesh Patel<br>
+          <strong>Address:</strong> Shanti Complex, College Road, Nadiad, Gujarat 387001<br>
+          <strong>Website:</strong> <a href="https://gujaratrelieffoundation.org" target="_blank">gujaratrelieffoundation.org</a>
+        </div>
+
+        <div class="buttons">
+          <a href="https://gujaratrelieffoundation.org" target="_blank">Visit the official site</a>
+          <a href="https://gujaratrelieffoundation.org/donate" target="_blank">Donate Now</a>
+        </div>
+      </div>
     </div>
 
-    <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 300px; padding: 20px;">
-      <img src="https://www.sewa.org/assets/img/gallery/gallery-img-3.jpg" alt="SEWA NGO" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-      <h2 style="color: #3b4cdf;">SEWA Gujarat</h2>
-      <p><strong>Address:</strong> SEWA Relief Unit, Anand-Nadiad Road</p>
-      <p><strong>Founder:</strong> Ela Bhatt</p>
-      <p><strong>Website:</strong> <a href="https://www.sewa.org" target="_blank" style="color: #3b4cdf;">sewa.org</a></p>
+    <div class="ngo">
+      <img src="https://cdn.givind.org/static/images/ngo-logo/akashya-patra.png" alt="Akshaya Patra Foundation">
+      <div class="ngo-details">
+        <h2>Akshaya Patra Relief Services</h2>
+        <p>During floods, earthquakes, and the COVID-19 pandemic, Akshaya Patra has consistently stepped up with meal distribution, ration kits, and relief supplies to vulnerable populations. Their field teams operate kitchens across Gujarat for mass food relief.</p>
+        <p>In the Nadiad region, they have supported rural communities with dry rations and hygiene kits. Their focus is both immediate disaster response and long-term rehabilitation support.</p>
+
+        <div class="info">
+          <strong>Founder:</strong> Shri Madhu Pandit Dasa<br>
+          <strong>Address:</strong> Near Jain Derasar, Vaniyavad, Nadiad, Gujarat 387002<br>
+          <strong>Website:</strong> <a href="https://www.akshayapatra.org" target="_blank">akshayapatra.org</a>
+        </div>
+
+        <div class="buttons">
+          <a href="https://www.akshayapatra.org" target="_blank">Visit the official site</a>
+          <a href="https://www.akshayapatra.org/onlinedonations" target="_blank">Donate Now</a>
+        </div>
+      </div>
     </div>
 
-    <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 300px; padding: 20px;">
-      <img src="https://rapidresponse.org.in/images/emergency-response.jpg" alt="Rapid Response" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-      <h2 style="color: #3b4cdf;">Rapid Response</h2>
-      <p><strong>Address:</strong> Disaster Help Center, Nadiad</p>
-      <p><strong>Founder:</strong> Mohamad Farukh</p>
-      <p><strong>Website:</strong> <a href="https://rapidresponse.org.in" target="_blank" style="color: #3b4cdf;">rapidresponse.org.in</a></p>
+    <div class="ngo">
+      <img src="https://images.indianexpress.com/2021/06/good-samaritan-corona-pandemic-759.jpg" alt="Helping Hands Gujarat">
+      <div class="ngo-details">
+        <h2>Helping Hands Gujarat</h2>
+        <p>Helping Hands is a youth-led volunteer NGO dedicated to disaster preparedness and recovery. They work closely with healthcare workers and emergency responders to deliver relief items, evacuate affected individuals, and rebuild homes in rural Gujarat.</p>
+        <p>In villages near Nadiad, the NGO has implemented flood relief camps and mobile health clinics during emergencies, reaching hundreds of families with life-saving aid and comfort.</p>
+
+        <div class="info">
+          <strong>Founder:</strong> Ms. Rupal Shah<br>
+          <strong>Address:</strong> Swaminarayan Marg, Near Navdeep Hospital, Nadiad, Gujarat 387001<br>
+          <strong>Website:</strong> <a href="https://helpinghandsgujarat.in" target="_blank">helpinghandsgujarat.in</a>
+        </div>
+
+        <div class="buttons">
+          <a href="https://helpinghandsgujarat.in" target="_blank">Visit the official site</a>
+          <a href="https://helpinghandsgujarat.in/donate" target="_blank">Donate Now</a>
+        </div>
+      </div>
     </div>
 
-    <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 300px; padding: 20px;">
-      <img src="https://cdn.givind.org/static/images/ngo/disaster-relief.jpg" alt="SAATH NGO" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-      <h2 style="color: #3b4cdf;">SAATH Charitable Trust</h2>
-      <p><strong>Address:</strong> Outreach Wing, Nadiad Rural, Gujarat</p>
-      <p><strong>Founder:</strong> Rajendra Joshi</p>
-      <p><strong>Website:</strong> <a href="https://www.saath.org" target="_blank" style="color: #3b4cdf;">saath.org</a></p>
-    </div>
-
-  </main>
-
-  <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0; margin-top: 40px;">
-    <p>© 2025 HaloHaven. All rights reserved.</p>
-  </footer>
-
+  </div>
 </body>
 </html>
