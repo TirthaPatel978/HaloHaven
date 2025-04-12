@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta charset="UTF-8">
+    <title>HaloHaven</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style1.css">
   <title>Disaster Relief NGOs - HaloHaven</title>
   <style>
     body {
@@ -13,7 +17,7 @@
     }
 
     nav {
-      background-color: #004080;
+      background-color: #38ba82;
       padding: 1em;
       text-align: center;
     }
@@ -27,69 +31,86 @@
 
     h1 {
       text-align: center;
-      color: #004080;
-      padding: 1em 0 0.5em;
+      color: #ffcc00;
+      padding-top: 20px;
     }
 
-    .ngo-container {
-      background-color:#222;
+    p.intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 10px auto 30px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .box-container {
       width: 90%;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      padding: 20px;
+      margin: 0 auto;
     }
 
-    .ngo {
+    .box {
       display: flex;
       flex-wrap: wrap;
+      background-color: #2c2c2c;
+      border-radius: 10px;
+      padding: 20px;
       margin-bottom: 30px;
-      border-bottom: 1px solid #be00fe, #631bff;;
-      padding-bottom: 50px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
-    .ngo img {
-      max-width: 300px;
-      width: 100%;
+    .box img {
+      width: 250px;
       height: auto;
       border-radius: 10px;
       margin-right: 20px;
     }
 
-    .ngo-details {
+    .box-content {
       flex: 1;
     }
 
-    .ngo-details h2 {
-      color: #004080;
+    .box-content h3 {
+      color: #00ccff;
       margin-top: 0;
+    }
+
+    .box-content p {
+      margin-bottom: 10px;
+      line-height: 1.6;
     }
 
     .info {
       margin-top: 10px;
+      font-size: 0.95em;
+    }
+
+    .info a {
+      color: #66ccff;
+      text-decoration: none;
     }
 
     .buttons {
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     .buttons a {
       display: inline-block;
       padding: 10px 20px;
       margin-right: 10px;
-      text-decoration: none;
-       background: linear-gradient(135deg, #be00fe, #631bff);
+      background: linear-gradient(135deg, #be00fe, #631bff);
       color: white;
       border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .buttons a:hover {
-      background-color:#4656e9;
+      background-color: #4656e9;
     }
   </style>
 </head>
 <body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="orphanage.html">Orphanages</a>
@@ -99,76 +120,66 @@
     <a href="relief.html">Disaster Relief</a>
   </nav>
 
-  
-  <header style="background-color: #000; color: #f4f4f4; padding: 30px 20px; text-align: center;">
-    <h1 style="margin: 0 0 10px;">Disaster Relief NGOs near Nadiad</h1>
-    <p style="font-size: 1.1em; max-width: 800px; margin: 0 auto;">
-      When natural disasters strike, these organizations step in with emergency aid, food, shelter, and rebuilding support. Below are reliable NGOs around Nadiad working to protect and empower affected communities. Join hands with them to make a real difference.
-    </p>
-  </header>
+  <h1>Disaster Relief NGOs near Nadiad</h1>
+  <p class="intro">
+    When natural disasters strike, these organizations step in with emergency aid, food, shelter, and rebuilding support.
+    Below are reliable NGOs around Nadiad working to protect and empower affected communities. Join hands with them to make a real difference.
+  </p>
 
-  <div class="ngo-container">
+  <div class="box-container">
 
-    <div class="ngo">
+    <div class="box">
       <img src="https://www.giveindia.org/blog/wp-content/uploads/2023/03/Disaster-Relief.jpg" alt="Gujarat Relief Foundation">
-      <div class="ngo-details">
-        <h2>Gujarat Relief Foundation</h2>
+      <div class="box-content">
+        <h3>Gujarat Relief Foundation</h3>
         <p>The Gujarat Relief Foundation has been providing disaster response and humanitarian aid since 2001. From earthquake recovery to cyclone relief and pandemic aid, the NGO is known for its rapid response and collaboration with local authorities to serve affected communities.</p>
-        <p>They conduct awareness drives, provide temporary shelters, and supply clean water, food, and medicine to those impacted by natural disasters. Their volunteer network is active in districts around Nadiad and beyond.</p>
-
         <div class="info">
           <strong>Founder:</strong> Mr. Dinesh Patel<br>
           <strong>Address:</strong> Shanti Complex, College Road, Nadiad, Gujarat 387001<br>
           <strong>Website:</strong> <a href="https://gujaratrelieffoundation.org" target="_blank">gujaratrelieffoundation.org</a>
         </div>
-
         <div class="buttons">
-          <a href="https://gujaratrelieffoundation.org" target="_blank">Visit the official site</a>
+          <a href="https://gujaratrelieffoundation.org" target="_blank">Visit Official Site</a>
           <a href="https://gujaratrelieffoundation.org/donate" target="_blank">Donate Now</a>
         </div>
       </div>
     </div>
 
-    <div class="ngo">
-      <img src="https://cdn.givind.org/static/images/ngo-logo/akashya-patra.png" alt="Akshaya Patra Foundation">
-      <div class="ngo-details">
-        <h2>Akshaya Patra Relief Services</h2>
+    <div class="box">
+      <img src="https://cdn.givind.org/static/images/ngo-logo/akashya-patra.png" alt="Akshaya Patra Relief Services">
+      <div class="box-content">
+        <h3>Akshaya Patra Relief Services</h3>
         <p>During floods, earthquakes, and the COVID-19 pandemic, Akshaya Patra has consistently stepped up with meal distribution, ration kits, and relief supplies to vulnerable populations. Their field teams operate kitchens across Gujarat for mass food relief.</p>
-        <p>In the Nadiad region, they have supported rural communities with dry rations and hygiene kits. Their focus is both immediate disaster response and long-term rehabilitation support.</p>
-
         <div class="info">
           <strong>Founder:</strong> Shri Madhu Pandit Dasa<br>
           <strong>Address:</strong> Near Jain Derasar, Vaniyavad, Nadiad, Gujarat 387002<br>
           <strong>Website:</strong> <a href="https://www.akshayapatra.org" target="_blank">akshayapatra.org</a>
         </div>
-
         <div class="buttons">
-          <a href="https://www.akshayapatra.org" target="_blank">Visit the official site</a>
+          <a href="https://www.akshayapatra.org" target="_blank">Visit Official Site</a>
           <a href="https://www.akshayapatra.org/onlinedonations" target="_blank">Donate Now</a>
         </div>
       </div>
     </div>
 
-    <div class="ngo">
+    <div class="box">
       <img src="https://images.indianexpress.com/2021/06/good-samaritan-corona-pandemic-759.jpg" alt="Helping Hands Gujarat">
-      <div class="ngo-details">
-        <h2>Helping Hands Gujarat</h2>
+      <div class="box-content">
+        <h3>Helping Hands Gujarat</h3>
         <p>Helping Hands is a youth-led volunteer NGO dedicated to disaster preparedness and recovery. They work closely with healthcare workers and emergency responders to deliver relief items, evacuate affected individuals, and rebuild homes in rural Gujarat.</p>
-        <p>In villages near Nadiad, the NGO has implemented flood relief camps and mobile health clinics during emergencies, reaching hundreds of families with life-saving aid and comfort.</p>
-
         <div class="info">
           <strong>Founder:</strong> Ms. Rupal Shah<br>
           <strong>Address:</strong> Swaminarayan Marg, Near Navdeep Hospital, Nadiad, Gujarat 387001<br>
           <strong>Website:</strong> <a href="https://helpinghandsgujarat.in" target="_blank">helpinghandsgujarat.in</a>
         </div>
-
         <div class="buttons">
-          <a href="https://helpinghandsgujarat.in" target="_blank">Visit the official site</a>
+          <a href="https://helpinghandsgujarat.in" target="_blank">Visit Official Site</a>
           <a href="https://helpinghandsgujarat.in/donate" target="_blank">Donate Now</a>
         </div>
       </div>
     </div>
 
   </div>
+
 </body>
 </html>
