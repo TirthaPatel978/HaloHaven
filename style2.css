@@ -40,7 +40,10 @@
   .overlay-content h1 {
     font-size: 3em;
     margin: 0;
-    font-family: 'Georgia', serif;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     text-shadow: 2px 2px 6px rgba(132, 139, 247, 0.748);
   }
 
@@ -64,6 +67,10 @@
     font-size: 2em;
     color: #3c9499;
     margin-bottom: 25px;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     border-left: 6px solid #6db1af;
     padding-left: 12px;
   }
@@ -161,16 +168,37 @@
     color: #ffffff;
     text-align: center;
     padding: 20px;
-    text-shadow: 2px 2px 6px rgba(82, 82, 82, 0.532);
-    height: 40vh;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.808);
+    height: 10vh;
   }
 
   .message {
-    filter: brightness(60%);
+    filter: brightness(70%);
     position: relative;
     background: url("volunteer1.webp") no-repeat center center/cover;
   }
   
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c; /* Dark background track */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6db1af; /* Teal thumb */
+  border-radius: 8px;
+  border: 2px solid #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f7170; /* Slightly darker on hover */
+}
+ 
+
   /* Responsive video section */
 @media screen and (max-width: 768px) {
   .video-wrapper {
