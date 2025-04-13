@@ -38,15 +38,15 @@ body{
   
   /* Individual parallax backgrounds */
   .parallax-one {
-    background-image: url('about1.jpg');
-  }
-  
-  .parallax-two {
     background-image: url('about2.jpg');
   }
   
-  .parallax-three {
+  .parallax-two {
     background-image: url('about3.webp');
+  }
+  
+  .parallax-three {
+    background-image: url('about1.jpg');
   }
   
   /* Dark Content Section */
