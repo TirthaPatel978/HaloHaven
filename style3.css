@@ -1,0 +1,225 @@
+body{
+    font-family: 'Georgia', serif;
+}
+
+/* Parallax Section */
+.parallax-section {
+    position: relative;
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .parallax-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    border-radius: 12px;
+    color: #ffe8e8;
+    max-width: 700px;
+  }
+  
+  .parallax-section h2 {
+    font-size: 2.5em;
+    color: #e6d1ff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.778);
+    margin-bottom: 15px;
+  }
+  
+  .parallax-section p {
+    font-size: 1.1em;
+    line-height: 1.7;
+  }
+  
+  /* Individual parallax backgrounds */
+  .parallax-one {
+    background-image: url('about1.jpg');
+  }
+  
+  .parallax-two {
+    background-image: url('about2.jpg');
+  }
+  
+  .parallax-three {
+    background-image: url('about3.webp');
+  }
+  
+  /* Dark Content Section */
+  .info-section.expanded {
+    background: #111111;
+    color: #eeeeee;
+    padding: 100px 40px;
+    letter-spacing: 0.3px;
+    line-height: 1.9;
+  }
+  
+  .info-section.expanded .info-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .info-section.expanded h2 {
+    font-size: 2.1em;
+    margin-bottom: 30px;
+    color: #236b63;
+  }
+  
+  .info-section.expanded p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+  }
+  
+  .info-section.expanded .quote {
+    font-style: italic;
+    font-size: 1.3em;
+    color: #85d3cb;
+    margin: 40px 0;
+    border-left: 4px solid #543179;
+    padding-left: 20px;
+  }
+
+  .info-section {
+    background-color: #111;
+    color: #f1f1f1;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  
+  .info-content {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .info-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+  
+  .info-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+  }
+  
+  .svg-divider {
+    margin-top: -5px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg); /* optional: flip direction */
+  }
+  
+  .svg-divider svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .parallax-section {
+      height: 50vh;
+    }
+  
+    .parallax-section h2 {
+      font-size: 2em;
+    }
+  
+    .parallax-section p {
+      font-size: 1em;
+    }
+  
+    .info-section.expanded {
+      padding: 80px 30px;
+    }
+  
+    .info-section.expanded h2 {
+      font-size: 1.8em;
+    }
+  
+    .info-section.expanded p {
+      font-size: 1em;
+    }
+  
+    .info-section.expanded .quote {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .parallax-section {
+      height: 40vh;
+      background-attachment: scroll; /* mobile fix for parallax bug */
+    }
+  
+    .parallax-overlay {
+      padding: 30px 15px;
+    }
+  
+    .parallax-section h2 {
+      font-size: 1.6em;
+    }
+  
+    .parallax-section p {
+      font-size: 0.95em;
+    }
+  
+    .info-section.expanded {
+      padding: 60px 20px;
+    }
+  
+    .info-content h2 {
+      font-size: 1.7em;
+    }
+  
+    .info-content p {
+      font-size: 0.95em;
+    }
+  
+    .info-section.expanded .quote {
+      font-size: 1em;
+      padding-left: 15px;
+    }
+  
+    .svg-divider svg {
+      height: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .parallax-section {
+      height: 35vh;
+    }
+  
+    .parallax-overlay h2 {
+      font-size: 1.4em;
+    }
+  
+    .parallax-overlay p {
+      font-size: 0.9em;
+    }
+  
+    .info-section.expanded {
+      padding: 40px 15px;
+    }
+  
+    .info-content h2 {
+      font-size: 1.5em;
+    }
+  
+    .info-content p {
+      font-size: 0.9em;
+    }
+  
+    .info-section.expanded .quote {
+      font-size: 0.95em;
+    }
+  
+    .svg-divider svg {
+      height: 30px;
+    }
+  }
+  
