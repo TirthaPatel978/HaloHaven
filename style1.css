@@ -29,7 +29,8 @@ body {
 .categories-hero h1 {
   font-size: 3em;
   margin-bottom: 20px;
-  color: #d6fff9;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.778);
 }
 
 .categories-hero p {
