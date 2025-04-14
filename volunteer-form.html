@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaloHaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <style>
+        .contact-hero {
+            margin-top: 125px;
+            background: url("volunteer-form1.jpg") no-repeat center center/cover;
+            height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+  
+        .contact-hero-text {
+            background-color: rgba(0, 0, 0, 0.693);
+            padding: 30px 50px;
+            border-radius: 10px;
+            color: #ffffff;
+            text-align: center;
+            max-width: 90%;
+         }
+  
+        .contact-hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #d6fff9;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.778);
+        }
+  
+        .contact-hero p {
+            font-size: 1.2em;
+            color: #f1f1f1;
+        }
+
+        .volunteer-form-section {
+            background: #111;
+            color: #f1f1f1;
+            padding: 60px 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .volunteer-form {
+            max-width: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .volunteer-form input,
+            .volunteer-form select,
+                .volunteer-form textarea {
+                    padding: 10px;
+                    border: none;
+                    border-radius: 6px;
+                    background: #222;
+                    color: #fff;
+        }
+
+        .volunteer-form label {
+            font-weight: bold;
+        }
+
+        .volunteer-form button {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #a500dc, #5215d4);
+            color: #000000;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .volunteer-form button:hover {
+            background: linear-gradient(135deg, #5215d4, #a500dc);
+            transform: scale(1.05);       
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><img src="logo.jpg" alt="HaloHaven" class="logo1"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact-hero">
+        <div class="contact-hero-text">
+            <h1>Volunteer With Us</h1>
+            <p>Your kindness could change lives. Fill out the form to join a cause that matters to you.</p>
+        </div>
+  </section>
+
+  <section class="volunteer-form-section">
+    <form action="thankyou.html" method="post" class="volunteer-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="program">Select a Program</label>
+      <select id="program" name="program" required>
+        <option value="">-- Please choose one --</option>
+        <option value="elder-care">Elder Care Assistance</option>
+        <option value="orphanages">Support Orphanages</option>
+        <option value="animal-shelters">Animal Shelter Aid</option>
+        <option value="reforestation">Reforestation Campaign</option>
+        <option value="disaster-relief">Disaster Relief Help</option>
+      </select>
+
+      <label for="availability">Availability</label>
+      <input type="text" id="availability" name="availability" placeholder="Weekends, Evenings, etc." />
+
+      <label for="skills">Skills / Experience</label>
+      <textarea id="skills" name="skills" rows="3" placeholder="Optional"></textarea>
+
+      <label for="reason">Why Do You Want to Volunteer?</label>
+      <textarea id="reason" name="reason" rows="4" placeholder="Optional"></textarea>
+
+      <button onclick="window.location.href='thankyou.html'">Submit</button>
+    </form>
+  </section>
+</body>
+</html>

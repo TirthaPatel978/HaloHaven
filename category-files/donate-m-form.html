@@ -117,6 +117,23 @@
             color: #cccccc;
             margin-top: 10px;
         }
+        .donation-form button {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #a500dc, #5215d4);
+            color: #000000;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .donation-form button:hover {
+            background: linear-gradient(135deg, #5215d4, #a500dc);
+            transform: scale(1.05);       
+        }  
     </style>
 </head>
 <body>
@@ -200,7 +217,10 @@
             I would like to receive updates on how my donation is used.
           </label>
       
-          <button type="submit">Donate</button>
+          <div class="donate-btn">
+            <a href="../thankyou.html" class="donate-btn">Donate</a>
+          </div>
+
         </form>
       </section>
 </body>

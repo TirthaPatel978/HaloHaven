@@ -107,17 +107,18 @@ body{
   }
   
   .svg-divider {
-    margin-top: -5px;
+    position: relative;
+    width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg); /* optional: flip direction */
   }
   
   .svg-divider svg {
     display: block;
     width: 100%;
-    height: 60px;
+    height: 170px;
   }
+  
   
   @media screen and (max-width: 1024px) {
     .parallax-section {
