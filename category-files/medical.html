@@ -172,7 +172,119 @@
             width: 100%;
             height: 170px;
         }
-      
+        /* Scrollbar Track */
+::-webkit-scrollbar {
+  height: 10px;         
+  width: 10px;        
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #be00fe, #5215d4);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px #00000099;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5215d4, #be00fe);
+}
+        @media (max-width: 1024px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .section p {
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  .hospital-box .facts {
+    column-count: 1;
+  }
+
+  .category-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .donate-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .donate-btn a {
+    font-size: 1em;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hospital-box img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hospital-box {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .hospital-box h2 {
+    font-size: 1.3em;
+  }
+
+  .hospital-box p {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+
+  .facts ul {
+    font-size: 0.95em;
+  }
+
+  .svg-divider svg {
+    height: 100px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .hospital-box {
+    padding: 15px;
+  }
+
+  .hospital-box h2 {
+    font-size: 1.1em;
+  }
+
+  .hospital-box p {
+    font-size: 0.9em;
+  }
+
+  .donate-btn a {
+    font-size: 0.9em;
+    padding: 8px 14px;
+  }
+
+  .section h2 {
+    font-size: 1.5em;
+  }
+}
+
     </style>
 </head>
 <body>
@@ -195,8 +307,8 @@
     <nav class="category-nav">
         <ul>
           <li><a href="orphanage.html">Orphanages</a></li>
-          <li><a href="oldage-homes.html">Old Age Homes</a></li>
           <li><a href="medical.html">Medical Centers</a></li>
+          <li><a href="oldage-homes.html">Old Age Homes</a></li>
           <li><a href="relief.html">Disaster Relief</a></li>
         </ul>
     </nav>

@@ -7,183 +7,303 @@
   <link rel="stylesheet" href="../style1.css">
   <style>
     body {
-      background-color: #000;
-      color: #f4f4f4;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
+        background-color: #000000;
+        color: #f4f4f4;
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
-   
     .category-nav {
-      background-color: #022b27;
-            padding: 10px 0;
-            text-align: center;
-            border-top: 1px solid #000000;
-            border-bottom: 1px solid #000000;
-            margin-top: 120px;
-            z-index: 1;
-            position: relative;
-            width: 100%;
+        background-color: #022b27;
+        padding: 10px 0;
+        text-align: center;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        margin-top: 120px;
+        z-index: 1;
+        position: relative;
+        width: 100%;
     }
 
     .category-nav ul {
-      list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     .category-nav li a {
-      color: #38ba82;
-            border: 2px solid rgb(1, 31, 27);
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight:bold;
-            font-size: 1em;
-            transition: color 0.3s ease-in-out;
+        color: #38ba82;
+        border: 2px solid rgb(1, 31, 27);
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight:bold;
+        font-size: 1em;
+        transition: color 0.3s ease-in-out;
     }
 
     .category-nav li a:hover {
-      color: #ffffff;
-            background-color: rgb(0, 0, 0);
-            text-shadow: 0 0 5px rgba(0, 0, 0, 0.185);
-    }
-    header {
-      background-color: #000;
-      padding: 20px;
-      text-align: left;
+        color: #ffffff;
+        background-color: rgb(0, 0, 0);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.185);
     }
 
-    header h1 {
-      color: #38ba82;
-      margin-top: 10px;
+    .section {
+        padding: 60px 30px;
+        max-width: 1000px;
+        margin: auto;
     }
 
-   
-    .intro {
-      margin-bottom: 40px;
-      background-color: #111;
-      padding: 20px;
-      border-radius: 10px;
-      color: #ccc;
-      line-height: 1.6;
+    .section h2 {
+        font-size: 2.1em;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: #613d93;
+    }
+
+    .section p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #ffffff;
+    }
+
+    .old-con {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
     }
 
     .org-card {
-      max-width: 1200px;
-            margin: 40px auto;
-            background-color: #1a1a1a;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
+        background-color: #1a1a1a;
+        border-left: 5px solid #7a7785;
+        border-radius: 10px;
+        padding: 25px;
+        width:fit-content;
+        box-shadow: 0 4px 20px rgba(98, 0, 255, 0.141);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease;
     }
 
-    .org-card img {
-      width: 300px;
-      height: auto;
+    .org-card:hover {
+        transform: scale(1.03);
+    }
+    .org-body {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .org-img {
+      width: 180px;
+      height: 150px;
+      margin-top: 3%;
       object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 
-    .org-content {
-      padding: 20px;
+    .org-text {
       flex: 1;
     }
 
-    .org-content h2 {
-      color: #3b4cdf;
-      font-size: 1.4em;
-      margin-bottom: 10px;
+    .org-card {
+      max-width: 1000px;
+      margin: auto;
+      background-color: #1a1a1a;
+      border-left: 5px solid #7a7785;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 20px rgba(98, 0, 255, 0.141);
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .org-content p {
-      color: #d0d0d0;
-      font-size: 0.95em;
-      line-height: 1.6;
-      margin-bottom: 20px;
+    .org-card h2 {
+        color: #3b4cdf;
+        font-size: 1.4em;
+        margin-bottom: 10px;
     }
 
-    .org .facts {
-      column-count: 2;
-      column-gap: 40px;
-      column-rule-style: solid;
+    .org-card p {
+        color: #d0d0d0;
+        font-size: 0.95em;
+        line-height: 1.6;
+        margin-bottom: 20px;
     }
-    .org .facts h4 {
-            text-align: center;
-            color: #4656e9;
-            column-span: all;
-        }
-        .facts ul {
-            list-style: disc inside;
-            padding: 0;
-            margin: 11px 0;
-            line-height: 1.8;
-        }
-
-        .facts li {
-              margin-bottom: 7px;
-        }
-
-    .org-content a {
-      color: #3b4cdf;
-      text-decoration: none;
+    .org-card .facts {
+        column-count: 2;
+        column-gap: 40px;
+        column-rule-style: solid;
+    }
+    .org-card .facts h4 {
+        text-align: center;
+        color: #4656e9;
+        column-span: all;
+    }
+    .facts ul {
+        list-style: disc inside;
+        padding: 0;
+        margin: 11px 0;
+        line-height: 1.8;
     }
 
-    .buttons a {
-      display: inline-block;
-      margin-right: 15px;
-      padding: 8px 16px;
-      border-radius: 5px;
-      background: linear-gradient(135deg, #a500dc, #5215d4);
-      color: #000;
-      font-weight: bold;
+    .facts li {
+          margin-bottom: 7px;
     }
-
     .donate-btn {
-            display: flex;
-            gap: 50px;
-            margin-top: 50px;
-            flex-wrap: wrap;
-        }
-        .donate-btn a{
-            align-self: flex-start;
-            background: linear-gradient(135deg, #a500dc, #5215d4);
-            color: #000000;
-            padding: 10px 18px;
-            border: none;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 1em;
-            text-decoration: none;
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
+        display: flex;
+        gap: 50px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .donate-btn a{
+        align-self: flex-start;
+        background: linear-gradient(135deg, #a500dc, #5215d4);
+        color: #000000;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 1em;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
 
-        .donate-btn a:hover {
-            background: linear-gradient(135deg, #5215d4, #a500dc);
-            transform: scale(1.05);
-        }     
+    .donate-btn a:hover {
+        background: linear-gradient(135deg, #5215d4, #a500dc);
+        transform: scale(1.05);
+    } 
+    /* Scrollbar Track */
+::-webkit-scrollbar {
+  height: 10px;         
+  width: 10px;        
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #be00fe, #5215d4);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px #00000099;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
 
-        .svg-divider {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5215d4, #be00fe);
+}
+    .svg-divider {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .svg-divider svg {
+        display: block;
+        width: 100%;
+        height: 170px;
+    }
   
-        .svg-divider svg {
-            display: block;
-            width: 100%;
-            height: 170px;
-        }
-      
-  
-    
-  </style>
+   /* Responsive Tweaks */
+@media (max-width: 1024px) {
+  .org-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .org-img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .org-card .facts {
+    column-count: 1;
+  }
+
+  .donate-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .category-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section h2 {
+    font-size: 1.8em;
+  }
+
+  .section p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .org-card {
+    padding: 20px;
+  }
+
+  .org-card h2 {
+    font-size: 1.2em;
+  }
+
+  .org-card p {
+    font-size: 0.9em;
+  }
+
+  .org-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .donate-btn a {
+    font-size: 0.95em;
+    padding: 10px 15px;
+  }
+
+  .svg-divider svg {
+    height: 100px;
+  }
+
+  .category-nav {
+    margin-top: 80px;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 8px;
+  }
+}
+
+</style>
 </head>
 <body>
   <header>
@@ -203,132 +323,197 @@
 <nav class="category-nav">
   <ul>
     <li><a href="orphanage.html">Orphanages</a></li>
-    <li><a href="oldage-homes.html">Old Age Homes</a></li>
     <li><a href="medical.html">Medical Centers</a></li>
+    <li><a href="oldage-homes.html">Old Age Homes</a></li>
     <li><a href="relief.html">Disaster Relief</a></li>
   </ul>
 </nav>
 <section class="section">
-  <h2>Healing Through Compassion</h2>
+  <h2>Honoring With Emotion</h2>
   <p>
-      Our mission is to support medical centers that provide life-saving treatments to underserved communities.
-      Whether it's through funding vital equipment, helping cover surgery costs, or assisting health workers in rural
-      areas—every contribution you make brings hope and healing to someone in need.
+    Our mission is to support old age and nursing homes that provide care, dignity, and comfort to the elderly.
+    Whether it’s through improving living conditions, funding medical support, or simply offering companionship to those left behind—
+    every contribution you make helps bring peace, love, and respect to someone who once gave everything to others.
   </p>
-  <p>HaloHaven proudly connects you to compassionate old age homes in Nadiad and Vadodara. These homes offer care, companionship, and dignity to the elderly who may not have family to support them. Each center provides medical attention, nutritious meals, and emotional support, creating a peaceful and respectful living environment for seniors. Join us in supporting these institutions through your time, resources, or donations.</p>
+  <p>HaloHaven proudly connects you to compassionate old age homes in Gujarat. These homes offer care, companionship, and dignity to the elderly who may not have family to support them. Each center provides medical attention, nutritious meals, and emotional support, creating a peaceful and respectful living environment for seniors. Join us in supporting these institutions through your time, resources, or donations.</p>
 
 </section>
 
-  <div class="container">
-    
+<div class="old-con">
 
-    <!-- Each card below includes photo, intro paragraph, and details -->
-
-    <!-- Card 1 -->
-    <div class="org-card">
-      <img src="https://tse1.mm.bing.net/th?id=OIP.Yx6oPhWGMdaFtI0GrIW3owHaCk&pid=Api" alt="Jivan Sandhya Old Age Home">
-      <div class="org-content">
-        <h2>Jivan Sandhya Old Age Home</h2>
-        <p>Located in the heart of Nadiad, Jivan Sandhya Old Age Home is a trusted place where elderly residents receive round-the-clock attention, healthy meals, and daily activities designed for their wellbeing.</p>
-        <p>Residents enjoy gardening sessions and cultural programs that keep them active and mentally engaged. The home is known for its clean environment and warm, respectful staff.</p>
-        <p><strong>Address:</strong> Near Civil Hospital, Nadiad, Gujarat 387001</p>
-        <p><strong>Founder:</strong> Mr. Prakash Shah</p>
-        <p><strong>Website:</strong> <a href="http://jivansandhya.org" target="_blank">jivansandhya.org</a></p>
-        <div class="buttons">
-          <a href="http://jivansandhya.org" class="visit" target="_blank">Visit official Website</a>
-          <a href="#" class="donate">Donate Now</a>
+      <!-- Card 1 -->
+      <div class="org-card">
+        <div class="org-body">
+          <img src="old1.jpeg" alt="Jivan Sandhya Old Age Home" class="org-img">
+          <div class="org-text">
+            <h2>Jivan Sandhya Old Age Home</h2>
+            <p>Located in the heart of Nadiad, Jivan Sandhya is a trusted home where elderly residents receive 24/7 care, nutritious meals, and uplifting daily routines.</p>
+            <p>From gardening and cultural programs to personal attention and healthcare, this home focuses on creating a respectful and joyous environment.</p>
+          </div>
+        </div>
+          <div class="facts">
+            <h4>Basic information</h4>
+            <ul>
+                <li><strong>Address:</strong> Near Civil Hospital, Nadiad, Gujarat 387001</li>
+                <li><strong>Founder:</strong> Mr. Prakash Shah</li>
+                <li><strong>Mobile-1:</strong> 91+ 4565789874</li>
+                <li><strong>Mobile-2:</strong> 91+ 9897675643</li>
+            </ul>
+          </div>
+          <div class="donate-btn">
+            <a href="https://www.saidwarkamaifoundation.in/ourwork/jeevansandhya.htm">Visit Official Website</a>
+            <a href="donate-ol-form.html">Donate Now</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="org-card">
-      <img src="https://tse3.mm.bing.net/th?id=OIP.h3KYYt-wAabBuf0tQ8CaJAHaEK&pid=Api" alt="Shraddha Old Age Home">
-      <div class="org-content">
-        <h2>Shraddha Old Age Home</h2>
-        <p>Shraddha provides a comfortable and secure space for senior citizens, with clean accommodation, yoga sessions, and a caring team. The center emphasizes community bonding and psychological wellness.</p>
-        <p>Their physiotherapy sessions and in-house library make daily life enjoyable. Shraddha Old Age Home is also known for celebrating festivals with full community participation.</p>
-        <p><strong>Address:</strong> College Road, Anand-Nadiad Highway, Nadiad, Gujarat 387002</p>
-        <p><strong>Founder:</strong> Mrs. Urmila Desai</p>
-        <p><strong>Website:</strong> <a href="http://shraddhaoldage.org" target="_blank">shraddhaoldage.org</a></p>
-        <div class="buttons">
-          <a href="http://shraddhaoldage.org" class="visit" target="_blank">Visit official Website</a>
-          <a href="#" class="donate">Donate Now</a>
+  
+      <!-- Card 2 -->
+      <div class="org-card">
+        <div class="org-body">
+          <img src="old2.jpeg" alt="Shraddha Old Age Home"  class="org-img">
+          <div class="org-text">
+            <h2>Shraddha Old Age Home</h2>
+            <p>Shraddha offers a calm, safe space for seniors, with clean rooms, yoga classes, and a friendly community that feels like family.
+              <br>They celebrate festivals with love and host wellness activities to keep minds and bodies active and strong.</p>
+          </div>
+        </div>
+          <div class="facts">
+            <h4>Basic information</h4>
+            <ul>
+                <li><strong>Address:</strong> College Road, Anand-Nadiad Highway, Nadiad, Gujarat 387002</li>
+                <li><strong>Founder:</strong> Mrs. Urmila Desai</li>
+                <li><strong>Mobile:</strong> 91+ 8767965644</li>
+                <li><strong>Visiting time:</strong> 8 am - 6 pm from Monday to Saturday </li>
+            </ul>
+          </div>
+          <div class="donate-btn">
+            <a href="https://www.theparentscare.com/service/shraddha-old-age-home">Visit Official Website</a>
+            <a href="donate-ol-form.html">Donate Now</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="org-card">
-      <img src="https://eldercasa.com/wp-content/uploads/2023/03/Kamdhenu-Retreat-Image-1.jpg" alt="Savita Elderly Care Center">
-      <div class="org-content">
-        <h2>Savita Elderly Care Center</h2>
-        <p>At Savita Elderly Care, residents enjoy a vibrant environment with medical staff, scheduled therapies, spiritual programs, and tailored wellness routines for a graceful aging journey.</p>
-        <p><strong>Address:</strong> Mahadev Nagar, Nadiad, Gujarat 387001</p>
-       <p>They also offer nutritional consultations and psychological counseling for overall well-being. The facility maintains an emergency medical response unit on standby.</p>
-        <p><strong>Founder:</strong> Dr. Kiran Patel</p>
-        <p><strong>Website:</strong> <a href="http://savitaeldercare.org" target="_blank">savitaeldercare.org</a></p>
-        <div class="buttons">
-          <a href="http://savitaeldercare.org" class="visit" target="_blank">Visit official Website</a>
-          <a href="#" class="donate">Donate Now</a>
+  
+      <!-- Card 3 -->
+      <div class="org-card">
+        <div class="org-body">
+          <img src="old3.jpeg" alt="Jagruti Elderly Care Center" class="org-img">
+          <div class="org-text">
+            <h2>Jagruti Elderly Care Center</h2>
+            <p>
+              At Jagruti, elderly residents live gracefully with on-site doctors, wellness routines, spiritual care, and strong emotional support.
+              <br>The center offers nutritional and mental health counseling and an emergency medical response unit to ensure safety and peace of mind.
+            </p>
+          </div>
+        </div>
+          
+          <div class="facts">
+            <h4>Basic information</h4>
+            <ul>
+                <li><strong>Address:</strong> Mahadev Nagar, Nadiad, Gujarat 387001</li>
+                <li><strong>Founder:</strong>  Dr. Kiran Patel</li>
+                <li><strong>Mobile:</strong> 91+ 9232454676</li>
+                <li><strong>Visiting time:</strong> 8 am - 6 pm from Sunday to Saturday </li>
+            </ul>
+          </div>
+          <div class="donate-btn">
+            <a href="https://www.jagrutirehab.org/old-age-home-in-gujarat.html">Visit Official Website</a>
+            <a href="donate-ol-form.html">Donate Now</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="org-card">
-      <img src="https://tse4.mm.bing.net/th?id=OIP.h7yRZ7Cx67li9YybQaTnIgHaE8&pid=Api" alt="Mangal Dham Senior Home">
-      <div class="org-content">
-        <h2>Mangal Dham Senior Home</h2>
-        <p>Mangal Dham creates a loving family-like atmosphere for its residents with spiritual care, group activities, nutritious meals, and a dedicated nursing staff.</p>
-        <p>Mangal Dham also has a lush courtyard where residents can relax and meditate. Weekly visits by volunteers help build strong intergenerational relationships.</p>
-        <p><strong>Address:</strong> Opp. Jain Derasar, Nadiad Rural, Gujarat 387001</p>
-        <p><strong>Founder:</strong> Mr. Harshad Bhatt</p>
-        <p><strong>Website:</strong> <a href="http://mangaldham.org" target="_blank">mangaldham.org</a></p>
-        <div class="buttons">
-          <a href="http://mangaldham.org" class="visit" target="_blank">Visit official Website</a>
-          <a href="#" class="donate">Donate Now</a>
+  
+      <!-- Card 4 -->
+      <div class="org-card">
+        <div class="org-body">
+          <img src="old4.jpeg" alt="Shantiniketan Senior Living" class="org-img">
+          <div class="org-text">
+            <h2>Shantiniketan Senior Living</h2>
+            <p>
+              We provide spiritual healing, community bonding, and serene gardens to help seniors find joy in their golden years.
+              <br>With nursing staff and weekly intergenerational visits, the residents enjoy a blend of peace and vibrant social connection.
+            </p>
+          </div>
+        </div>
+          <div class="facts">
+            <h4>Basic information</h4>
+            <ul>
+                <li><strong>Address:</strong> Opp. Jain Derasar, Nadiad Rural, Gujarat 387001</li>
+                <li><strong>Founder:</strong>  Mr. Harshad Bhatt</li>
+                <li><strong>Mobile-1:</strong> 91+ 8790054676</li>
+                <li><strong>Mobile-2:</strong> 91+ 6785933409</li>
+            </ul>
+          </div>
+          <div class="donate-btn">
+            <a href="https://www.myssl.co.in">Visit Official Website</a>
+            <a href="donate-ol-form.html">Donate Now</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="org-card">
-      <img src="https://tse3.mm.bing.net/th?id=OIP.uhXZmo0fvJ7sWbPqDcb5fgHaE8&pid=Api" alt="Vadodara Senior Shelter">      <div class="org-content">
-        <h2>Vadodara Senior Shelter</h2>
-        <p>This home provides elder care and rehabilitation services with skilled medical personnel, a friendly environment, and regular social gatherings for residents’ emotional support.</p>
-        <p>Special wellness camps and outdoor excursions are part of their monthly calendar. The shelter also provides training in digital literacy for interested residents.</p>
-        <p><strong>Address:</strong> Karelibaug, Vadodara, Gujarat 390018</p>
-        <p><strong>Founder:</strong> Mr. Suresh Patel</p>
-        <p><strong>Website:</strong> <a href="http://vadodarashelter.org" target="_blank">vadodarashelter.org</a></p>
-        <div class="buttons">
-          <a href="http://vadodarashelter.org" class="visit" target="_blank">Visit official Website</a>
-          <a href="#" class="donate">Donate Now</a>
+  
+      <!-- Card 5 -->
+      <div class="org-card">
+        <div class="org-body">
+          <img src="old5.jpeg" alt="Jivandhara Vrudhashram" class="org-img">
+          <div class="org-text">
+            <h2>Jivandhara Vrudhashram</h2>
+            <p>
+              With skilled care, emotional support, and digital literacy sessions, this center empowers elderly lives through kindness and community.
+              <br>Monthly outdoor events and wellness camps give residents an enriched lifestyle that promotes independence and dignity.
+            </p>
+          </div>
+        </div>
+          <div class="facts">
+            <h4>Basic information</h4>
+            <ul>
+                <li><strong>Address:</strong> Karelibaug, Vadodara, Gujarat 390018</li>
+                <li><strong>Founder:</strong>  Mr. Suresh Patel</li>
+                <li><strong>Mobile:</strong> 91+ 8080766876</li>
+                <li><strong>Visiting time:</strong> 8 am - 6 pm from Sunday to Saturday </li>
+            </ul>
+          </div>
+          <div class="donate-btn">
+            <a href="https://jivandharaoldagehome.com">Visit Official Website</a>
+            <a href="donate-ol-form.html">Donate Now</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="org-card">
-      <img src="https://tse1.mm.bing.net/th?id=OIP.FES1btaqa7Wc7Y_EprwT9wHaE7&pid=Api" alt="Shanti Nivas Senior Home">      <div class="org-content">
-        <h2>Shanti Nivas Senior Home</h2>
-        <p>Shanti Nivas offers peaceful, safe living for seniors with facilities for meditation, health monitoring, cultural engagement, and peer companionship in Vadodara’s Gotri area.</p>
-        <p>It hosts art and music therapy workshops every week to uplift residents. The center is equipped with CCTV surveillance ensuring round-the-clock safety.</p>
-        <p><strong>Address:</strong> Gotri Road, Vadodara, Gujarat 390021</p>
-        <p><strong>Founder:</strong> Mrs. Hiral Joshi</p>
-        <p><strong>Website:</strong> <a href="http://shantinivas.org" target="_blank">shantinivas.org</a></p>
-        <div class="buttons">
-          <a href="http://shantinivas.org" class="visit" target="_blank">Visit official Website</a>
-          <a href="#" class="donate">Donate Now</a>
+  
+      <!-- Card 6 -->
+      <div class="org-card">
+        <div class="org-body">
+          <img src="old6.jpeg" alt="Bhakti Sevashram" class="org-img">
+          <div class="org-text">
+            <h2>Bhakti Sevashram</h2>
+            <p>
+              Bhakti Sevashram provides safe, peaceful living with music therapy, art workshops, meditation, and advanced security for elders.
+              <br>Residents feel nurtured, connected, and inspired in this soulful home where age is embraced with grace.
+            </p>
+          </div>
+        </div>
+          <div class="facts">
+            <h4>Basic information</h4>
+            <ul>
+                <li><strong>Address:</strong> Gotri Road, Vadodara, Gujarat 390021</li>
+                <li><strong>Founder:</strong>   Mrs. Hiral Joshi</li>
+                <li><strong>Mobile:</strong> 91+ 9976004535</li>
+                <li><strong>Visiting time:</strong> 9 am - 5 pm from Monday to Saturday </li>
+            </ul>
+          </div>
+          <div class="donate-btn">
+            <a href="https://gokuldhamnar.org/old-age-home/">Visit Official Website</a>
+            <a href="donate-ol-form.html">Donate Now</a>
+          </div>
         </div>
       </div>
+  
     </div>
-
-  </div>
-  <div class="svg-divider">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-      <path d="M0,32 C480,120 960,0 1440,96 L1440,0 L0,0 Z" fill="#1a1a1a"></path>
-    </svg>
-  </div>
-</body>
-</html>
+  
+    <!-- SVG Divider -->
+    <div class="svg-divider">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,32 C480,120 960,0 1440,96 L1440,0 L0,0 Z" fill="#1a1a1a"></path>
+      </svg>
+    </div>
+  
+  </body>
+  </html>

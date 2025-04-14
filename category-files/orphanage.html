@@ -201,6 +201,94 @@
             height: 170px;
         }
          
+        @media (max-width: 1024px) {
+  .orphanage-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section h2 {
+    font-size: 1.8em;
+  }
+
+  .section p {
+    font-size: 1em;
+  }
+
+  .gallery-item {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .donate-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .image-gallery {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .gallery-item {
+    flex: 0 0 auto;
+    width: 160px;
+    scroll-snap-align: start;
+  }
+
+  .orphanage-box .facts {
+    column-count: 1;
+  }
+
+  .orphanage-box h2 {
+    font-size: 1.2em;
+  }
+
+  .orphanage-box p {
+    font-size: 0.9em;
+  }
+
+  .facts ul {
+    font-size: 0.9em;
+  }
+}
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  height: 10px;         
+  width: 10px;        
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #be00fe, #5215d4);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px #00000099;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5215d4, #be00fe);
+}
+
+
     </style>
 </head>
 <body>
@@ -222,9 +310,9 @@
 
     <nav class="category-nav">
         <ul>
-          <li><a href="orphanages.html">Orphanages</a></li>
-          <li><a href="oldage-homes.html">Old Age Homes</a></li>
+          <li><a href="orphanage.html">Orphanages</a></li>
           <li><a href="medical.html">Medical Centers</a></li>
+          <li><a href="oldage-homes.html">Old Age Homes</a></li>
           <li><a href="relief.html">Disaster Relief</a></li>
         </ul>
     </nav>
@@ -346,6 +434,7 @@
                 <div class="gallery-item">
                   <img src="orphanage-3.3.png" alt="Orphanage 3">
                 </div>
+                
             </div>
             <div class="facts">
                 <h4>Basic Information</h4>
@@ -382,6 +471,9 @@
             </div>
             <div class="gallery-item">
               <img src="orphanage-4.3.png" alt="Orphanage 3">
+            </div>
+            <div class="gallery-item">
+              <img src="orphanage-4.4.png" alt="Orphanage 4">
             </div>
           </div>
           <div class="facts">
