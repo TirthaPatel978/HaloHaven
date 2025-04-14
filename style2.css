@@ -153,8 +153,8 @@ body {
   .program button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #6db1af;
-    color: #fff;
+    background-color: #1c8b88;
+    color: #000000;
     border: none;
     border-radius: 6px;
     font-weight: bold;
@@ -163,7 +163,7 @@ body {
   }
   
   .program button:hover {
-    background-color: #4f8e8c;
+    background-color: #166160;
   }
   
   .message h1 {

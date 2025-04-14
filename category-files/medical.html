@@ -16,7 +16,7 @@
 
         .category-nav {
             background-color: #022b27;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
             border-top: 1px solid #000000;
             border-bottom: 1px solid #000000;
@@ -39,6 +39,7 @@
         .category-nav li a {
             color: #38ba82;
             border: 2px solid rgb(1, 31, 27);
+            padding: 10px;
             border-radius: 10px;
             text-decoration: none;
             font-weight:bold;
@@ -214,7 +215,7 @@ html {
 
   .category-nav ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 28px;
   }
 
   .donate-btn {
@@ -289,20 +290,24 @@ html {
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="logo"><img src="../logo.jpg" alt="HaloHaven" class="logo1"></h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../categories.html">Categories</a></li>
-                    <li><a href="../volunteer.html">Volunteer</a></li>
-                    <li><a href="../about.html">About Us</a></li>
-                    <li><a href="../contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1 class="logo"><img src="../logo.jpg" alt="HaloHaven" class="logo1"></h1>
+  
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger">&#9776;</label>
+  
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../categories.html">Categories</a></li>
+          <li><a href="../volunteer.html">Volunteer</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <nav class="category-nav">
         <ul>
@@ -487,6 +492,34 @@ html {
           <path d="M0,32 C480,120 960,0 1440,96 L1440,0 L0,0 Z" fill="#1a1a1a"></path>
         </svg>
       </div>
-
+      <footer class="site-footer">
+        <div class="footer-container">
+      
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="orphanage.html">Orphanages</a></li>
+              <li><a href="medical.html">Medical Centers</a></li>
+              <li><a href="oldage-homes.html">Old Age Homes</a></li>
+              <li><a href="relief.html">Disaster Relief</a></li>
+              <li><a href="../volunteer.html">Volunteer</a></li>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3>HaloHaven</h3>
+            <p>Spreading kindness, one cause at a time.</p>
+            <p>Uniting hearts to serve the ones who need us most—across all generations, species, and communities.</p>
+          </div>
+      
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 HaloHaven. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
 </html>
