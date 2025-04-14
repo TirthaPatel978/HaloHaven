@@ -84,11 +84,11 @@ header {
 
 .main-nav ul li a:hover {
     color: #ffffff;
-    background-color: rgb(38, 73, 118);
+    background-color: #146f63;
     border-radius: 5px;
 }
 
-/* Home Section */
+/* Home Section */ 
 .home-section {
     height: 100vh;
     display: flex;
