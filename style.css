@@ -116,7 +116,7 @@ header {
     color: #63afe6;
 }
 .cts-button {
-    background: linear-gradient(135deg, #0e5c89, #106464);
+    background: linear-gradient(135deg, #3a9ad2, #c040dc);
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -186,6 +186,7 @@ header {
     font-size: 2.5em;
     color: #1ba290;
     margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
 }
 
 .help-cards {
@@ -196,29 +197,121 @@ header {
 }
 
 .help-card {
-    background:linear-gradient(145deg, #0d0d0d, #201f1f);
+    background:linear-gradient(145deg, #282626, #201f1f);
     padding: 20px;
     margin:2%;
     transition: transform 0.3s ease-in-out;
     border-radius: 8px;
-    box-shadow: 0px 8px 10px rgba(28, 28, 80, 0.184), 0 -8px 10px  rgba(28, 28, 80, 0.184), 8px 0 10px  rgba(28, 28, 80, 0.184), -8px 0 10px rgba(28, 28, 80, 0.184);
+    box-shadow: 0px 8px 10px rgba(47, 47, 77, 0.59), 0 -8px 10px  rgba(33, 33, 59, 0.634), 8px 0 10px  rgba(39, 39, 76, 0.678), -8px 0 10px rgba(40, 40, 80, 0.749);
     width: 300px;
     text-align: center;
 }
 
 .help-card:hover {
     transform: scale(1.05);
+    background:linear-gradient(145deg, #170628, #3158bb6b, #170628);
 }
 
 .help-card h3 {
     font-size: 1.5em;
     color: #0d6ed0;
     margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
 }
 
 .help-card p {
     font-size: 1em;
     color: #afd6d0;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  margin-left: 8%;
+  max-width: 1200px; /* Controls how wide the whole grid can grow */
+  padding: 40px 20px; /* Top/Bottom: 40px, Left/Right: 20px */
+  gap: 15px;
+  padding: 40px;
+  background-color: #000;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  animation: floatIn 0.7s ease both;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-item.video {
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hvideo-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.hvideo-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  border: none;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Custom sizes */
+.gallery-item.tall {
+  grid-row: span 2;
+}
+
+.gallery-item.wide {
+  grid-column: span 2;
+}
+.gallery-item.elarge {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.gallery-item.vlarge {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.gallery-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Animation */
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .volunteer-section {
@@ -230,8 +323,10 @@ header {
   }
   
   .volunteer-section h2 {
-    font-size: 2em;
-    color: #36377f;
+    font-size: 2.7em;
+    color: #5e60d7;
+    font-weight: 780;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
   }
   
@@ -243,19 +338,29 @@ header {
   }
   
   .volunteer-btn {
-    background: linear-gradient(135deg, #32727a, #254b9d);
+    background: linear-gradient(135deg, #bd91ff, #254b9d);
     color: #000;
     padding: 12px 24px;
+    box-shadow: 0px 5px 15px rgba(0, 229, 111, 0.096);
     font-weight: bold;
     font-size: 1em;
     text-decoration: none;
     border-radius: 8px;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease-in-out;
+
   }
-  
+  .volunteer-btn::before {
+    content: "";
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-in-out;
+    background: radial-gradient(circle, rgba(77, 66, 66, 0.2) 10%, rgba(255, 255, 255, 0) 50%);
+  }
+  .volunteer-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
   .volunteer-btn:hover {
-    background: linear-gradient(135deg, #8868ce, #393c9e);
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #c26cd1, #028aac);
+    transform: scale(2.05);
   }
   
 
@@ -269,6 +374,7 @@ header {
 .trust-section h2 {
     font-size: 2.5em;
     color:  #1ba290;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -285,8 +391,12 @@ header {
     padding: 12px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(231, 238, 255, 0.386);
+    transition: transform 0.3s ease-in-out;
     width: 260px;
     text-align: center;
+}
+.trust-card:hover {
+  transform: scale(1.05);
 }
 
 .trust-card img {
@@ -532,3 +642,17 @@ header {
       margin: 10px 0;
     }
   }
+
+  /* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .gallery-item.large,
+  .gallery-item.tall,
+  .gallery-item.wide {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+}
