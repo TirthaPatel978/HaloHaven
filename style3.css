@@ -153,7 +153,7 @@ body{
   @media screen and (max-width: 768px) {
     .parallax-section {
       height: 40vh;
-      background-attachment: scroll; /* mobile fix for parallax bug */
+      background-attachment: scroll; 
     }
   
     .parallax-overlay {
